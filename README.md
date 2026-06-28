@@ -341,45 +341,89 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ---
 
-## IMS Dashboard
+## 📸 Screenshots
 
-![IMS Dashboard](screenshots/ims homepage.jpeg)
+### 🏠 IMS Homepage
 
----
-
-## Deadline Manager
-
-![Deadline Manager](screenshots/academic calendar.jpeg)
+![IMS Homepage](screenshots/ims-homepage.jpeg)
 
 ---
 
-## Moodle Assignment Page
+### 🔐 IMS Login
 
-![Moodle Assignment](screenshots/moodle stud assignment.jpeg)
+![IMS Login](screenshots/ims-login.jpeg)
 
+---
 
-![Events Calendar](screenshots/events calendar.jpeg)
+### 📅 Academic Calendar
 
-![Event Reminder](screenshots/event reminder.jpeg)
+![Academic Calendar](screenshots/academic-calendar.jpeg)
 
-![IMS Login](screenshots/ims login.jpeg)
+---
 
-![Moodle Login](screenshots/moodle login.jpeg)
+### 🗓️ Events Calendar
 
-![Moodle Student Homepage](screenshots/moodle stud homepage.jpeg)
+![Events Calendar](screenshots/events-calendar.jpeg)
 
-![Moodle Student Submission](screenshots/moodle stud submission.jpeg)
+---
 
-![Moodle Faculty Homepage](screenshots/moodle faculty homepage.jpeg)
+### 🔔 Event Reminder
 
-![Moodle Faculty Subject](screenshots/moodle faculty subject.jpeg)
+![Event Reminder](screenshots/event-reminder.jpeg)
 
-![Moodle Faculty View](screenshots/moodle faculty view.jpeg)
+---
 
-![Assignment Submission](screenshots/assignment submission.jpeg)
+### 📚 Moodle Student Homepage
 
-![WhatsApp Reminder](screenshots/whatsapp reminder.jpeg)
+![Moodle Student Homepage](screenshots/moodle-stud-homepage.jpeg)
 
+---
+
+### 📝 Moodle Assignment Page
+
+![Moodle Assignment Page](screenshots/moodle-stud-assignment.jpeg)
+
+---
+
+### 📤 Assignment Submission
+
+![Assignment Submission](screenshots/assignment-submission.jpeg)
+
+---
+
+### ✅ Moodle Student Submission
+
+![Moodle Student Submission](screenshots/moodle-stud-submission.jpeg)
+
+---
+
+### 👨‍🏫 Moodle Faculty Homepage
+
+![Moodle Faculty Homepage](screenshots/moodle-faculty-homepage.jpeg)
+
+---
+
+### 📖 Moodle Faculty Subject
+
+![Moodle Faculty Subject](screenshots/moodle-faculty-subject.jpeg)
+
+---
+
+### 📊 Moodle Faculty View
+
+![Moodle Faculty View](screenshots/moodle-faculty-view.jpeg)
+
+---
+
+### 🔑 Moodle Login
+
+![Moodle Login](screenshots/moodle-login.jpeg)
+
+---
+
+### 💬 WhatsApp Reminder
+
+![WhatsApp Reminder](screenshots/whatsapp-reminder.jpeg)
 
 ## 🎥 Demo Video
 
