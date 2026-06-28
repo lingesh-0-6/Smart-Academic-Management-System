@@ -351,32 +351,43 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ## IMS Dashboard
 
-![IMS Dashboard](screenshots/ims_homepage.png)
+![IMS Dashboard](screenshots/ims homepage.jpeg)
 
 ---
 
 ## Deadline Manager
 
-![Deadline Manager](screenshots/academic_calendar.png)
+![Deadline Manager](screenshots/academic calendar.jpeg)
 
 ---
 
 ## Moodle Assignment Page
 
-![Moodle Assignment](screenshots/moodle_stud_assignment.png)
+![Moodle Assignment](screenshots/moodle stud assignment.jpeg)
 
----
 
-## Faculty Dashboard
+![Events Calendar](screenshots/events calendar.jpeg)
 
-![Faculty Dashboard](screenshots/moodle faculty homepage.jpeg)
+![Event Reminder](screenshots/event reminder.jpeg)
 
----
+![IMS Login](screenshots/ims login.jpeg)
 
-## WhatsApp Reminder
+![Moodle Login](screenshots/moodle login.jpeg)
+
+![Moodle Student Homepage](screenshots/moodle stud homepage.jpeg)
+
+![Moodle Student Submission](screenshots/moodle stud submission.jpeg)
+
+![Moodle Faculty Homepage](screenshots/moodle faculty homepage.jpeg)
+
+![Moodle Faculty Subject](screenshots/moodle faculty subject.jpeg)
+
+![Moodle Faculty View](screenshots/moodle faculty view.jpeg)
+
+![Assignment Submission](screenshots/assignment submission.jpeg)
 
 ![WhatsApp Reminder](screenshots/whatsapp reminder.jpeg)
----
+
 
 ## 🎥 Demo Video
 
