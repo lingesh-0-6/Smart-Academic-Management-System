@@ -1,5 +1,6 @@
-[README.md](https://github.com/user-attachments/files/29432816/README.md)
 # 🎓 RIT Smart Institute Management System
+
+**Repository:** `Smart-Academic-Management-System`
 
 An integrated academic platform connecting an **Institute Management System (IMS)**, a **Moodle-style Learning Management System (LMS)**, and an **automated Email-to-Event pipeline** — all powered by a single shared database, eliminating the need for manual data synchronization between systems.
 
@@ -130,8 +131,12 @@ Gmail inbox → hourly cron fetches new emails → keyword detection identifies 
 ## 📂 Folder Structure
 
 ```
-rit-smart-ims/
-├── rit-ims/                      # Institute Management System
+Smart-Academic-Management-System/
+├── README.md
+├── schema.sql                    # Shared MySQL database schema
+├── screenshots/                  # Project screenshots for README
+│
+├── rit-ims-v2/                   # Institute Management System
 │   ├── frontend/
 │   │   ├── src/
 │   │   │   ├── pages/
@@ -170,24 +175,21 @@ rit-smart-ims/
 │       ├── server.js
 │       └── package.json
 │
-├── email-integration/            # Email-to-Event Automation Service
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── emails.js
-│   │   └── events.js
-│   ├── services/
-│   │   ├── emailService.js
-│   │   └── reminderService.js
-│   ├── utils/
-│   │   ├── db.js
-│   │   ├── gmail.js
-│   │   └── keywords.js
-│   ├── get-token.js
-│   ├── server.js
-│   └── package.json
-│
-├── schema.sql                    # Shared MySQL database schema
-└── README.md
+└── email-integration/            # Email-to-Event Automation Service
+    ├── routes/
+    │   ├── auth.js
+    │   ├── emails.js
+    │   └── events.js
+    ├── services/
+    │   ├── emailService.js
+    │   └── reminderService.js
+    ├── utils/
+    │   ├── db.js
+    │   ├── gmail.js
+    │   └── keywords.js
+    ├── get-token.js
+    ├── server.js
+    └── package.json
 ```
 
 ---
@@ -202,8 +204,8 @@ rit-smart-ims/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/rit-smart-ims.git
-cd rit-smart-ims
+git clone https://github.com/<your-username>/Smart-Academic-Management-System.git
+cd Smart-Academic-Management-System
 ```
 
 ### 2. Set up the database
@@ -214,7 +216,7 @@ mysql -u root -p < schema.sql
 ### 3. Install dependencies for each service
 ```bash
 # IMS Backend
-cd rit-ims/backend && npm install
+cd rit-ims-v2/backend && npm install
 
 # IMS Frontend
 cd ../frontend && npm install
@@ -235,7 +237,7 @@ cd ../../email-integration && npm install
 
 Create a `.env` file in each backend folder using the templates below.
 
-**`rit-ims/backend/.env`**
+**`rit-ims-v2/backend/.env`**
 ```env
 PORT=5000
 DB_HOST=localhost
@@ -312,14 +314,14 @@ npm run dev
 
 **5. Start the IMS Backend**
 ```bash
-cd rit-ims/backend
+cd rit-ims-v2/backend
 node server.js
 # Running on http://localhost:5000
 ```
 
 **6. Start the IMS Frontend**
 ```bash
-cd rit-ims/frontend
+cd rit-ims-v2/frontend
 npm run dev
 # Running on http://localhost:3000
 ```
@@ -342,17 +344,43 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ## 📸 Screenshots
 
-> _Add screenshots of the IMS dashboard, Deadline Manager calendar, Moodle assignment page, and faculty submission view here._
 
 | IMS Dashboard | Deadline Manager | Moodle Assignment Page |
 |---|---|---|
 | ![IMS Dashboard](./screenshots/ims-dashboard.png) | ![Deadline Manager](./screenshots/deadline-manager.png) | ![Moodle Assignment](./screenshots/moodle-assignment.png) |
+# 📸 Screenshots
 
+## IMS Dashboard
+
+![IMS Dashboard](screenshots/imshomepage.png)
+
+---
+
+## Deadline Manager
+
+![Deadline Manager](screenshots/academiccalendar.png)
+
+---
+
+## Moodle Assignment Page
+
+![Moodle Assignment](screenshots/moodlestudassignment.png)
+
+---
+
+## Faculty Dashboard
+
+![Faculty Dashboard](screenshots/moodlefacultyhomepage.png)
+
+---
+
+## WhatsApp Reminder
+
+![WhatsApp Reminder](screenshots/whatsappreminder.jpeg)
 ---
 
 ## 🎥 Demo Video
 
-> _Add a link to your YouTube or Google Drive demo video here._
 
 [▶️ Watch the full demo](https://drive.google.com/file/d/1qwtqGlF-VJTBEYuyqEw2OnV50sHVl2mC/view?usp=sharing)
 
