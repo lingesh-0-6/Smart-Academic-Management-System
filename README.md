@@ -352,19 +352,19 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ## IMS Dashboard
 
-![IMS Dashboard](screenshots/imshomepage.png)
+![IMS Dashboard](screenshots/ims_homepage.png)
 
 ---
 
 ## Deadline Manager
 
-![Deadline Manager](screenshots/academiccalendar.png)
+![Deadline Manager](screenshots/academic_calendar.png)
 
 ---
 
 ## Moodle Assignment Page
 
-![Moodle Assignment](screenshots/moodlestudassignment.png)
+![Moodle Assignment](screenshots/moodle_stud_assignment.png)
 
 ---
 
