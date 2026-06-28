@@ -1,4 +1,4 @@
-# 🎓 RIT Smart Institute Management System
+# 🎓 Smart Institute Management System (RIT)
 
 **Repository:** `Smart-Academic-Management-System`
 
@@ -132,8 +132,7 @@ Gmail inbox → hourly cron fetches new emails → keyword detection identifies 
 
 ```
 Smart-Academic-Management-System/
-├── README.md
-├── schema.sql                    # Shared MySQL database schema
+├── README.md                  
 ├── screenshots/                  # Project screenshots for README
 │
 ├── rit-ims-v2/                   # Institute Management System
@@ -370,29 +369,19 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ## Faculty Dashboard
 
-![Faculty Dashboard](screenshots/moodlefacultyhomepage.png)
+![Faculty Dashboard](screenshots/moodle faculty homepage.jpeg)
 
 ---
 
 ## WhatsApp Reminder
 
-![WhatsApp Reminder](screenshots/whatsappreminder.jpeg)
+![WhatsApp Reminder](screenshots/whatsapp reminder.jpeg)
 ---
 
 ## 🎥 Demo Video
 
 
 [▶️ Watch the full demo](https://drive.google.com/file/d/1qwtqGlF-VJTBEYuyqEw2OnV50sHVl2mC/view?usp=sharing)
-
----
-
-## 👥 Team Members
-
-| Name | Role | GitHub |
-|------|------|--------|
-| [Your Name] | Full Stack Developer | [@your-github-handle](https://github.com/your-github-handle) |
-| [Teammate Name] | [Role] | [@teammate-handle](https://github.com/teammate-handle) |
-| [Teammate Name] | [Role] | [@teammate-handle](https://github.com/teammate-handle) |
 
 ---
 
