@@ -203,7 +203,7 @@ Smart-Academic-Management-System/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/Smart-Academic-Management-System.git
+git clone https://github.com/lingesh-0-6/Smart-Academic-Management-System.git
 cd Smart-Academic-Management-System
 ```
 
