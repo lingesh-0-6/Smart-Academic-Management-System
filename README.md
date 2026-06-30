@@ -7,22 +7,16 @@ An integrated academic platform connecting an **Institute Management System (IMS
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?logo=reactrouter&logoColor=white)
-![CSS Modules](https://img.shields.io/badge/CSS_Modules-1572B6?logo=css3&logoColor=white)
-
 ![Node.js](https://img.shields.io/badge/Node.js-22-339933?logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-5-000000?logo=express&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-Authentication-000000?logo=jsonwebtokens&logoColor=white)
-![Multer](https://img.shields.io/badge/Multer-File_Uploads-FF6F00)
-![node-cron](https://img.shields.io/badge/node--cron-Scheduler-2C3E50)
-
-![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
-
-![Gmail API](https://img.shields.io/badge/Gmail_API-OAuth_2.0-EA4335?logo=gmail&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?logo=jsonwebtokens&logoColor=white)
 ![Twilio](https://img.shields.io/badge/Twilio-WhatsApp-F22F46?logo=twilio&logoColor=white)
+![Gmail API](https://img.shields.io/badge/Gmail_API-OAuth-EA4335?logo=gmail&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 
-![dotenv](https://img.shields.io/badge/dotenv-Environment-ECD53F)
-![Git](https://img.shields.io/badge/Git-Version_Control-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)
+
 ---
 
 ## Problem Statement
