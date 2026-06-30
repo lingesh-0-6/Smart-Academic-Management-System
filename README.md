@@ -1,4 +1,4 @@
-# 🎓 Smart Institute Management System (RIT)
+# Smart Institute Management System (RIT)
 
 **Repository:** `Smart-Academic-Management-System`
 
@@ -6,7 +6,7 @@ An integrated academic platform connecting an **Institute Management System (IMS
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Colleges typically rely on fragmented systems for academic management:
 
@@ -19,7 +19,7 @@ There was a need for a connected system where academic data, assignment submissi
 
 ---
 
-## 💡 Solution Overview
+## Solution Overview
 
 **RIT Smart IMS** solves this by architecting three interconnected services that share a single MySQL database as the source of truth:
 
@@ -31,30 +31,30 @@ Because all three services read and write to the same database, a submission mad
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🏫 IMS Dashboard
+### IMS Dashboard
 - Login via student register number with credentials verified against the database
 - Real-time CGPA, attendance, and arrears displayed on the dashboard
 - Deadline Manager calendar showing only assignments for the student's enrolled courses
 - Department-based filtering enforced at the SQL query level (e.g., a CSE student never sees a MECH-only assignment)
 - Direct deep-link redirect into the corresponding Moodle assignment page
 
-### 📚 Moodle-style LMS
+### Moodle-style LMS
 - Separate JWT-authenticated login flows for students and faculty
 - Faculty can create assignments with title, description, and deadline
 - Automatic fan-out creation of pending submission records for every enrolled student the moment an assignment is created
 - File upload support via Multer with automatic late-submission detection
 - Faculty dashboard to view submission status across all students
 
-### 📧 Email-to-Event Automation
+### Email-to-Event Automation
 - OAuth 2.0 integration with the Gmail API (read-only scope)
 - Keyword-based detection (20+ terms: workshop, hackathon, seminar, placement drive, etc.)
 - Multi-format regex date extraction (DD/MM/YYYY, Month DD YYYY, YYYY-MM-DD, and more)
 - Duplicate event prevention before database insertion
 - Hourly automated email fetch via scheduled cron job
 
-### 🔔 Automated WhatsApp Reminders
+### Automated WhatsApp Reminders
 - Twilio WhatsApp API integration for deadline and event reminders
 - Scheduled cron jobs trigger reminders for assignments due within 24–72 hours
 - "Remind Me" feature lets students opt into event reminders, calculated 2 days before the registration deadline
@@ -62,7 +62,7 @@ Because all three services read and write to the same database, a submission mad
 
 ---
 
-## 🏗️ System Architecture / Workflow
+## System Architecture / Workflow
 
 ```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────────┐
@@ -101,7 +101,7 @@ Gmail inbox → hourly cron fetches new emails → keyword detection identifies 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend**
 - React 18 (Vite)
@@ -128,7 +128,7 @@ Gmail inbox → hourly cron fetches new emails → keyword detection identifies 
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```
 Smart-Academic-Management-System/
@@ -193,7 +193,7 @@ Smart-Academic-Management-System/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -232,7 +232,7 @@ cd ../../email-integration && npm install
 
 ---
 
-## 🔑 Environment Variables
+## Environment Variables
 
 Create a `.env` file in each backend folder using the templates below.
 
@@ -280,7 +280,7 @@ TWILIO_WHATSAPP_NUMBER=+14155238886
 
 ---
 
-## ▶️ How to Run Locally
+## How to Run Locally
 
 Run each service in a separate terminal window.
 
@@ -329,7 +329,7 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Migrate Gmail token storage from `.env` to a secure database-backed token store
 - [ ] Add email notifications alongside WhatsApp reminders
@@ -343,87 +343,73 @@ Open `http://localhost:3000` in your browser to access the IMS, and log in using
 
 ## 📸 Screenshots
 
-### 🏠 IMS Homepage
+<table align="center">
+  <tr>
+    <td align="center">
+      <b>📅 Academic Calendar</b><br><br>
+      <img src="screenshots/academic-calendar.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>🗓️ Events Calendar</b><br><br>
+      <img src="screenshots/events-calendar.jpeg" width="450"/>
+    </td>
+  </tr>
 
-![IMS Homepage](screenshots/ims-homepage.jpeg)
+  <tr>
+    <td align="center">
+      <b>🔔 Event Reminder</b><br><br>
+      <img src="screenshots/event-reminder.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>📚 Moodle Student Homepage</b><br><br>
+      <img src="screenshots/moodle-stud-homepage.jpeg" width="450"/>
+    </td>
+  </tr>
 
----
+  <tr>
+    <td align="center">
+      <b>📝 Moodle Assignment Page</b><br><br>
+      <img src="screenshots/moodle-stud-assignment.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>📤 Assignment Submission</b><br><br>
+      <img src="screenshots/assignment-submission.jpeg" width="450"/>
+    </td>
+  </tr>
 
-### 🔐 IMS Login
+  <tr>
+    <td align="center">
+      <b>✅ Moodle Student Submission</b><br><br>
+      <img src="screenshots/moodle-stud-submission.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>👨‍🏫 Moodle Faculty Homepage</b><br><br>
+      <img src="screenshots/moodle-faculty-homepage.jpeg" width="450"/>
+    </td>
+  </tr>
 
-![IMS Login](screenshots/ims-login.jpeg)
+  <tr>
+    <td align="center">
+      <b>📖 Moodle Faculty Subject</b><br><br>
+      <img src="screenshots/moodle-faculty-subject.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>📊 Moodle Faculty View</b><br><br>
+      <img src="screenshots/moodle-faculty-view.jpeg" width="450"/>
+    </td>
+  </tr>
 
----
-
-### 📅 Academic Calendar
-
-![Academic Calendar](screenshots/academic-calendar.jpeg)
-
----
-
-### 🗓️ Events Calendar
-
-![Events Calendar](screenshots/events-calendar.jpeg)
-
----
-
-### 🔔 Event Reminder
-
-![Event Reminder](screenshots/event-reminder.jpeg)
-
----
-
-### 📚 Moodle Student Homepage
-
-![Moodle Student Homepage](screenshots/moodle-stud-homepage.jpeg)
-
----
-
-### 📝 Moodle Assignment Page
-
-![Moodle Assignment Page](screenshots/moodle-stud-assignment.jpeg)
-
----
-
-### 📤 Assignment Submission
-
-![Assignment Submission](screenshots/assignment-submission.jpeg)
-
----
-
-### ✅ Moodle Student Submission
-
-![Moodle Student Submission](screenshots/moodle-stud-submission.jpeg)
-
----
-
-### 👨‍🏫 Moodle Faculty Homepage
-
-![Moodle Faculty Homepage](screenshots/moodle-faculty-homepage.jpeg)
-
----
-
-### 📖 Moodle Faculty Subject
-
-![Moodle Faculty Subject](screenshots/moodle-faculty-subject.jpeg)
-
----
-
-### 📊 Moodle Faculty View
-
-![Moodle Faculty View](screenshots/moodle-faculty-view.jpeg)
-
----
-
-### 🔑 Moodle Login
-
-![Moodle Login](screenshots/moodle-login.jpeg)
-
----
-
-### 💬 WhatsApp Reminder
-
-![WhatsApp Reminder](screenshots/whatsapp-reminder.jpeg)
+  <tr>
+    <td align="center">
+      <b>🔑 Moodle Login</b><br><br>
+      <img src="screenshots/moodle-login.jpeg" width="450"/>
+    </td>
+    <td align="center">
+      <b>💬 WhatsApp Reminder</b><br><br>
+      <img src="screenshots/whatsapp-reminder.jpeg" width="450"/>
+    </td>
+  </tr>
+</table>
 
 ## 🎥 Demo Video
 
